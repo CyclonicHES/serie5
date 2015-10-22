@@ -24,6 +24,19 @@ public class Customer {
         this.accounts = new ArrayList<Account>();
     }
 
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public Collection<Account> getAccounts() {
+        return accounts;
+    }
+    
+
     public Account getAccountByNumber(String number) {
         for (Account compte : accounts) {
             if (compte.getNumber() == number) {
